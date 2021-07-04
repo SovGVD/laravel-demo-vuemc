@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// TODO this is wrong!!!
-Route::resource('/article', 'App\Http\Controllers\ArticleController');
+// TODO this is wrong place for API!!!
+Route::resource('/api/article', 'App\Http\Controllers\ArticleController');
 
-Route::get('/{any}', function () {
+Route::get('/{any?}', function () {
     return view('index');
-});
+})->where('any', '^(?!api).*$');
 

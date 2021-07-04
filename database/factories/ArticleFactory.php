@@ -25,7 +25,7 @@ class ArticleFactory extends Factory
             'date' => $this->faker->date(),
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
-            'body' => $this->faker->text(),
+            'body' => $this->faker->text(10000),
         ];
     }
 }

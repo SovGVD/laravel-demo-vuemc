@@ -15,8 +15,8 @@ export default class Article extends Model {
 
     routes() {
         return {
-            fetch: '/article/{id}',
-            save:  '/article',
+            fetch: '/api/article/{id}',
+            save:  '/api/article',
         }
     }
 }

@@ -1,7 +1,7 @@
 <template>
-    <ul class="tags">
-        <li v-for="tag in tags" :key="tag.id">{{ tag.tag }}</li>
-    </ul>
+    <div class="tags">
+        <span class="badge badge-primary" v-for="tag in tags" :key="tag.id">{{ tag.tag }}</span>
+    </div>
 </template>
 
 <script>
@@ -14,3 +14,4 @@ export default {
     },
 }
 </script>
+

@@ -9,9 +9,14 @@ export default class AricleCollection extends Collection {
         }
     }
 
+    fetchPage(pageNum) {
+        this.clearModels();
+        return this.page(pageNum).fetch();
+    }
+
     routes() {
         return {
-            fetch: '/article',
+            fetch: '/api/article',
         }
     }
 }
